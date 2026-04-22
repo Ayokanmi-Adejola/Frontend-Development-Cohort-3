@@ -1,6 +1,6 @@
 # Cohort 3: Git & GitHub Mastery
 
-Welcome to the official collaboration hub for **Cohort 3**! This repository is a live laboratory designed to transition you from writing code locally to collaborating in a professional, distributed team environment.
+Welcome to the official collaboration hub for **Cohort 3**, this repository is a live laboratory designed to transition you from writing code locally to collaborating in a professional, distributed team environment.
 
 
 ## 📌 Project Overview
