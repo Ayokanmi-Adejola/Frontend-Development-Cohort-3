@@ -1,6 +1,6 @@
-# 🚀 Frontend Development Cohort 3: Git & GitHub Collaboration
+# Frontend Development Cohort 3: Git & GitHub Collaboration
 
-Welcome to the official collaboration playground for **Cohort 3**! This repository is designed to help students move from solo coding to working in a professional team environment using Version Control.
+Welcome to the official collaboration playground for **Cohort 3**, this repository is designed to help students move from solo coding to working in a professional team environment using Version Control.
 
 ## 🎯 Learning Objectives
 - Master the **Git Flow** (Clone, Branch, Commit, Push).
