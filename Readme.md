@@ -1,19 +1,29 @@
-# Frontend Development Cohort 3: Collaboration
+# Frontend Development Cohort 3: Git & GitHub Mastery
 
-Welcome to the official collaboration playground for **Cohort 3**, this repository is designed to help students move from solo coding to working in a professional team environment using Version Control.
-
-## 🎯 Learning Objectives
-- Master the **Git Flow** (Clone, Branch, Commit, Push).
-- Understand how to open and review **Pull Requests**.
-- Learn how to resolve **Merge Conflicts** without breaking the build.
-- Explore **GitHub Pages** for live deployments.
+Welcome to the official collaboration hub for **Cohort 3**! This repository is a live laboratory designed to transition you from writing code locally to collaborating in a professional, distributed team environment.
 
 ---
 
-## 🛠️ How to Contribute
-Follow these steps to add your contribution to this project:
+## 📌 Project Overview
+This repository serves as a practical testing ground. Here, we will simulate real-world developer workflows, including feature branching, code reviews, and resolving the infamous "merge conflict."
 
-### 1. Clone the Repository
-Open your terminal and run:
+**Live Demo:** [View the Cohort Site](https://frontend-development-cohort-3.vercel.app/)
+
+---
+
+## 🛠️ The Collaborative Workflow (Step-by-Step)
+
+Follow these exact steps to contribute your work to the project.
+
+### 1. Environment Setup
+First, get the code onto your local machine:
+
 ```bash
+# Clone the repository
 git clone https://github.com/Ayokanmi-Adejola/Frontend-Development-Cohort-3.git
+
+# Enter the directory
+cd Frontend-Development-Cohort-3
+
+# Open in VS Code
+code .
