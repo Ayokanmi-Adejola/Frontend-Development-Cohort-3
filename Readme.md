@@ -1,4 +1,4 @@
-# Softlyft Frontend Development Cohort 3
+# Frontend Development Cohort 3
 
 This is a basic practice website for Cohort 3.
 
