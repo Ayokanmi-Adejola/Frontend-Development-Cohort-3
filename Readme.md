@@ -1,33 +1,42 @@
-# Cohort 3: Git & GitHub Mastery
+# Softlyft Frontend Development Cohort 3
 
-Welcome to the official collaboration hub for **Cohort 3**, this repository is a live laboratory designed to transition you from writing code locally to collaborating in a professional, distributed team environment.
+This is a basic practice website for Cohort 3.
 
+The site is intentionally imperfect so students can practice:
+1. Reading code
+2. Finding bugs
+3. Fixing UI and JavaScript issues
+4. Writing clean commits and pull requests
 
-## 📌 Project Overview
-This repository serves as a practical testing ground. Here, we will simulate real-world developer workflows, including feature branching, code reviews, and resolving the infamous "merge conflict."
+## Assignment Goal
+Fix the issues in this codebase and improve the quality of the website.
 
-**Live Demo:** [View the Cohort Site](https://frontend-development-cohort-3.vercel.app/)
+## Project Files
+1. index.html
+2. style.css
+3. script.js
 
+## Student Tasks
+1. Fix the schedule list styling bug.
+2. Fix the student count update so it increments correctly after form submission.
+3. Fix the demo day countdown logic and date.
+4. Improve form validation messages.
+5. Improve accessibility:
+	- Add better focus styles
+	- Ensure contrast and readability
+6. Make sure mobile layout looks clean and consistent.
+7. Refactor any messy code you find.
 
-## 🛠️ The Collaborative Workflow (Step-by-Step)
+## Bonus Tasks
+1. Add dark mode toggle.
+2. Store form submissions in localStorage.
+3. Add a simple loading animation for track filtering.
 
-Follow these exact steps to contribute your work to the project.
+## Suggested Workflow
+1. Create a new branch for your fixes.
+2. Commit in small logical steps.
+3. Open a pull request with a clear summary.
+4. Request a review from a teammate.
 
-### 1. Environment Setup
-First, get the code onto your local machine:
-
-
-# Clone the repository
-```bash
-git clone https://github.com/Ayokanmi-Adejola/Frontend-Development-Cohort-3.git
-```
-
-# Enter the directory
-```bash
-cd Frontend-Development-Cohort-3
-```
-
-# Open in VS Code
-```bash
-code .
-```
+## Instructor Notes
+The current site includes intentional errors in CSS selectors and JavaScript element targeting/date logic. Students should identify and fix them as part of this exercise.
