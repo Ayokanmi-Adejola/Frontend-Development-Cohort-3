@@ -77,8 +77,10 @@ body {
 .nav-links a {
 	color: #eef2ff;
 	text-decoration: none;
-	font-weight: 600;
-	font-size: 0.95rem;
+	font-weight: 800;
+	font-size: 1.05rem;
+	letter-spacing: 0.01em;
+	white-space: nowrap;
 	padding: 0.3rem 0.45rem;
 	border-radius: 8px;
 	transition: background-color 0.2s ease, transform 0.2s ease;
@@ -109,11 +111,6 @@ body {
 .hero-content h1 {
 	font-family: "Sora", "Manrope", sans-serif;
 		
-}
-
-.hero-content p {
-	max-width: 70ch;
-	color: #eef2ff;
 }
 
 .hero-actions {
@@ -169,6 +166,47 @@ main {
 	font-size: 1.4rem;
 }
 
+#tracks.panel {
+	padding-bottom: 0.9rem;
+}
+
+.track-select-label {
+	display: inline-block;
+	margin-bottom: 0.35rem;
+	font-weight: 700;
+	color: var(--text-main);
+}
+
+.track-select {
+	width: 100%;
+	padding: 0.65rem 0.75rem;
+	border: 1px solid #a8b4f5;
+	border-radius: 10px;
+	background: #ffffff;
+	color: var(--text-main);
+	font-weight: 600;
+	margin-bottom: 0.65rem;
+}
+
+.track-detail {
+	padding: 0.7rem 0.8rem;
+	border: 1px solid #d7ddff;
+	border-radius: 10px;
+	background: #f5f7ff;
+}
+
+.track-detail h3 {
+	margin: 0 0 0.2rem;
+	font-size: 1rem;
+}
+
+.track-detail p {
+	margin: 0;
+	color: var(--text-soft);
+	font-size: 0.9rem;
+	line-height: 1.35;
+}
+
 .panel > p {
 	color: var(--text-soft);
 }
@@ -176,15 +214,15 @@ main {
 .stats-grid,
 .tracks-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-	gap: 0.75rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.55rem;
 }
 
 .stat-card,
 .track-card {
 	border: 1px solid #d7ddff;
 	border-radius: 10px;
-	padding: 0.8rem;
+	padding: 0.65rem 0.7rem;
 	background: var(--brand-soft);
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -198,13 +236,16 @@ main {
 .stat-card h3,
 .track-card h3 {
 	margin-top: 0.1rem;
-	margin-bottom: 0.35rem;
+	margin-bottom: 0.22rem;
+	font-size: 1rem;
 }
 
 .stat-card p,
 .track-card p {
 	margin: 0;
 	color: var(--text-soft);
+	font-size: 0.9rem;
+	line-height: 1.35;
 }
 
 /* Intentional typo for assignment: this selector does not match .schedule-list in HTML. */
@@ -221,6 +262,7 @@ main {
 }
 
 .filter-btn,
+.assignment-filter-btn,
 #countdown-btn,
 form button {
 	background: linear-gradient(145deg, var(--brand-indigo) 0%, var(--brand-blue) 100%);
@@ -233,6 +275,178 @@ form button {
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.schedule-list {
+	margin: 0;
+	padding-left: 1rem;
+}
+
+.class-dates-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.6rem;
+}
+
+.class-dates-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.7rem;
+	padding: 0.65rem 0.8rem;
+	border: 1px solid #d7ddff;
+	border-radius: 10px;
+	background: #f4f7ff;
+	flex-wrap: wrap;
+}
+
+.class-day {
+	font-weight: 700;
+	color: #24347f;
+}
+
+.class-time {
+	font-size: 0.86rem;
+	font-weight: 700;
+	color: #123a66;
+	background: #d9edff;
+	border: 1px solid #b8daff;
+	padding: 0.25rem 0.5rem;
+	border-radius: 999px;
+}
+
+.progress-shell {
+	height: 14px;
+	border-radius: 999px;
+	background: #dfe5ff;
+	overflow: hidden;
+	margin-bottom: 0.8rem;
+}
+
+.progress-fill {
+	height: 100%;
+	width: 0%;
+	background: linear-gradient(90deg, #2fb7c6 0%, #4f5de2 100%);
+	transition: width 0.3s ease;
+}
+
+.resource-grid,
+.showcase-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 0.75rem;
+}
+
+.showcase-card {
+	border: 1px solid #d7ddff;
+	border-radius: 10px;
+	padding: 0.85rem;
+	background: #f5f7ff;
+}
+
+.resource-grid a {
+	text-decoration: none;
+	padding: 0.65rem;
+	border-radius: 9px;
+	background: #edf1ff;
+	color: #1e2c71;
+	font-weight: 700;
+	border: 1px solid #d6ddff;
+}
+
+.resource-grid a:hover {
+	background: #e1e8ff;
+}
+
+select {
+	padding: 0.58rem;
+	border: 1px solid #a8b4f5;
+	border-radius: 6px;
+	background: #ffffff;
+}
+
+.leaderboard-list,
+.announcement-list {
+	margin: 0.4rem 0 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.leaderboard-list li {
+	margin-bottom: 0.35rem;
+	font-weight: 600;
+}
+
+.faq-list details {
+	border: 1px solid #d7ddff;
+	border-radius: 8px;
+	padding: 0.55rem 0.7rem;
+	background: #f6f8ff;
+	margin-bottom: 0.5rem;
+}
+
+.faq-list summary {
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.curriculum-link {
+	display: inline-block;
+	margin-top: 0.35rem;
+	font-weight: 700;
+	color: #2d4bb7;
+}
+
+body.dark-mode {
+	color: #e4e9ff;
+	background: linear-gradient(180deg, #111a43 0%, #151f4f 100%);
+}
+
+body.dark-mode .panel {
+	background: #1b275f;
+	border-color: #3e4f9a;
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
+}
+
+body.dark-mode .panel > p,
+body.dark-mode .stat-card p,
+body.dark-mode .track-card p {
+	color: #c8d5ff;
+}
+
+body.dark-mode .stat-card,
+body.dark-mode .track-card,
+body.dark-mode .assignment-card,
+body.dark-mode .showcase-card,
+body.dark-mode .faq-list details,
+body.dark-mode .resource-grid a {
+	background: #253476;
+	border-color: #465cb6;
+	color: #e4e9ff;
+}
+
+body.dark-mode .class-dates-list li {
+	background: #253476;
+	border-color: #465cb6;
+}
+
+body.dark-mode .class-day {
+	color: #e4e9ff;
+}
+
+body.dark-mode .class-time {
+	color: #0f1f4f;
+	background: #c6d5ff;
+	border-color: #aebef5;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+	background: #1a2558;
+	border-color: #465cb6;
+	color: #f2f4ff;
+}
+
 .filter-btn:hover,
 #countdown-btn:hover,
 form button:hover {
@@ -241,6 +455,10 @@ form button:hover {
 }
 
 .filter-btn.active {
+	background: linear-gradient(145deg, #2d3f9f 0%, #3c5ad4 100%);
+}
+
+.assignment-filter-btn.active {
 	background: linear-gradient(145deg, #2d3f9f 0%, #3c5ad4 100%);
 }
 
@@ -315,6 +533,10 @@ footer {
 
 	.hero-content h1 {
 		font-size: 1.65rem;
+	}
+
+	.tracks-grid {
+		grid-template-columns: 1fr;
 	}
 }
 

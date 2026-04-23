@@ -28,8 +28,7 @@
         <section class="hero-content">
             <h1>Frontend Development Cohort 3 Practice Site</h1>
             <p>
-                This website is intentionally imperfect. Students should debug layout,
-                interaction, accessibility, and content issues as a weekly assignment.
+                This website is intentionally imperfect. Students should debug layout, interaction, accessibility, and content issues
             </p>
             <button id="countdown-btn">Show Days To Demo Day</button>
             <p id="countdown-result" aria-live="polite"></p>
@@ -45,56 +44,35 @@
                 frontend topics like React, TypeScript basics, UI libraries, API integration,
                 performance optimization, testing, and deployment.
             </p>
-
-            <div class="stats-grid">
-                <article class="stat-card">
-                    <h3 id="total-students">5</h3>
-                    <p>Students</p>
-                </article>
-                <article class="stat-card">
-                    <h3>1</h3>
-                    <p>Instructor</p>
-                </article>
-                <article class="stat-card">
-                    <h3>12</h3>
-                    <p>Weeks</p>
-                </article>
-            </div>
         </section>
 
         <section id="schedule" class="panel">
-            <h2>Weekly Schedule</h2>
+            <h2>Monthly Schedule</h2>
             <ul class="schedule-list">
-                <li>Week 1: Semantic HTML + accessibility basics</li>
-                <li>Week 2: CSS layouts and responsive design</li>
-                <li>Week 3: JavaScript DOM manipulation</li>
-                <li>Week 4: APIs and async JavaScript</li>
-                <li>Weeks 5-12: React, TypeScript basics, state management, testing, deployment, and project practice</li>
+                <li>Month 1: Semantic HTML + accessibility basics</li>
+                <li>Month 2: CSS layouts and responsive design</li>
+                <li>Month 3: JavaScript DOM manipulation</li>
+                <li>Month 4: APIs and async JavaScript</li>
+                <li>Months 5-12: React, TypeScript basics, state management, testing, deployment, and project practice</li>
             </ul>
         </section>
 
         <section id="tracks" class="panel">
             <h2>Learning Tracks</h2>
-            <div class="filter-row">
-                <button class="filter-btn active" data-track="all">All</button>
-                <button class="filter-btn" data-track="beginner">Beginner</button>
-                <button class="filter-btn" data-track="intermediate">Intermediate</button>
-            </div>
-
-            <div class="tracks-grid">
-                <article class="track-card" data-track="beginner">
-                    <h3>HTML Foundations</h3>
-                    <p>Structure pages with semantic and accessible markup.</p>
-                </article>
-                <article class="track-card" data-track="beginner">
-                    <h3>CSS Basics</h3>
-                    <p>Learn spacing, typography, and responsive breakpoints.</p>
-                </article>
-                <article class="track-card" data-track="intermediate">
-                    <h3>JavaScript DOM</h3>
-                    <p>Build interactions with events, state, and rendering.</p>
-                </article>
-            </div>
+            <label class="track-select-label" for="track-select">Choose a track</label>
+            <select id="track-select" class="track-select">
+                <option value="html">HTML Foundations</option>
+                <option value="css">CSS Basics</option>
+                <option value="javascript">JavaScript DOM</option>
+                <option value="react">React Fundamentals</option>
+                <option value="typescript">TypeScript Basics</option>
+                <option value="api">API Integration</option>
+                <option value="state">State Management</option>
+                <option value="testing">Testing and QA</option>
+                <option value="deployment">Deployment Essentials</option>
+                <option value="performance">Performance Optimization</option>
+            </select>
+            <div id="track-detail" class="track-detail" aria-live="polite"></div>
         </section>
 
         <section id="join" class="panel">
@@ -109,6 +87,86 @@
                 <button type="submit">Submit</button>
                 <p id="form-feedback" aria-live="polite"></p>
             </form>
+        </section>
+
+        <section id="progress" class="panel">
+            <h2>Class Progress Tracker</h2>
+            <p id="progress-text">Week 1 of 12</p>
+            <div class="progress-shell" role="img" aria-label="Class progress">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <button id="complete-week-btn" type="button">Mark Current Week Complete</button>
+        </section>
+
+        <section id="resources" class="panel">
+            <h2>Resource Hub</h2>
+            <div class="resource-grid">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML Docs</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS Docs</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript Docs</a>
+                <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">React Learn</a>
+                <a href="https://www.typescriptlang.org/docs/" target="_blank" rel="noopener noreferrer">TypeScript</a>
+                <a href="https://vite.dev/guide/static-deploy.html" target="_blank" rel="noopener noreferrer">Deployment Guide</a>
+            </div>
+        </section>
+
+        <section id="class-dates" class="panel">
+            <h2>Class Dates</h2>
+            <ul class="class-dates-list">
+                <li>
+                    <span class="class-day">Every Monday</span>
+                    <span class="class-time">12:00 PM - 2:00 PM</span>
+                </li>
+                <li>
+                    <span class="class-day">Every Wednesday</span>
+                    <span class="class-time">12:00 PM - 2:00 PM</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="attendance" class="panel">
+            <h2>Attendance Tracker</h2>
+            <p id="attendance-status">No check-in yet today.</p>
+            <button id="checkin-btn" type="button">Check In Today</button>
+            <p id="attendance-count">Total check-ins: 0</p>
+        </section>
+
+        <section id="faq" class="panel">
+            <h2>FAQ</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>How do I submit assignments?</summary>
+                    <p>Push your code to GitHub and share the repo link before the deadline.</p>
+                </details>
+                <details>
+                    <summary>What if npm install fails?</summary>
+                    <p>Delete node_modules and lock file, then run install again and share the error log if it persists.</p>
+                </details>
+                <details>
+                    <summary>Can I miss a live class?</summary>
+                    <p>Yes, but watch the recording and complete the catch-up task before next class.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="announcements" class="panel">
+            <h2>Announcements</h2>
+            <ul id="announcement-list" class="announcement-list">
+                <li>Welcome to Cohort 3. Keep your GitHub repos updated weekly.</li>
+            </ul>
+            <form id="announcement-form">
+                <label for="announcement-input">Add Announcement</label>
+                <input id="announcement-input" type="text" placeholder="Type announcement text">
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <section id="curriculum" class="panel">
+            <h2>Downloadable Curriculum</h2>
+            <p>
+                Access the complete frontend development curriculum PDF.
+            </p>
+            <a class="curriculum-link" href="https://softlyft.com/wp-content/uploads/2024/11/Frontend-Development-Curriculum.pdf" target="_blank" rel="noopener noreferrer">View/Download Curriculum PDF</a>
         </section>
     </main>
 
