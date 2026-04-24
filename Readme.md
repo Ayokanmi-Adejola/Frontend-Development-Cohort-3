@@ -18,7 +18,7 @@ The site is intentionally imperfect so students can practice:
  ```
   git clone https://github.com/Ayokanmi-Adejola/Frontend-Development-Cohort-3.git
 ```
-	- cd Frontend-Development-Cohort-3
+	 cd Frontend-Development-Cohort-3
 2. Create a new branch for your fixes.
  ```
   git checkout -b your-name-fixes
