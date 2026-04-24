@@ -1,31 +1,40 @@
 * {
 	box-sizing: border-box;
 }
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
 
+  --text-main: #ffffff;   
+  --text-soft: #cbd5ff;   
+  --surface: #1e1e1e;
+  --border: #444;
+}
 :root {
-	--brand-indigo: #4f5de2;
-	--brand-blue: #3888f2;
-	--brand-cyan: #38c9c5;
-	--brand-deep: #1f2f74;
-	--brand-soft: #eef2ff;
-	--text-main: #1a2550;
-	--text-soft: #4f5e95;
-	--surface: #ffffff;
-	--border: #d6dcff;
+  --bg-color: white;
+  --text-color: black;
+
+  --brand-indigo: #4f5de2;
+  --brand-blue: #3888f2;
+  --brand-cyan: #38c9c5;
+  --brand-deep: #1f2f74;
+  --brand-soft: #eef2ff;
+  --text-main: #1a2550;
+  --text-soft: #4f5e95;
+  --surface: #ffffff;
+  --border: #d6dcff;
 }
 
 body {
-	margin: 0;
-	font-family: "Manrope", "Segoe UI", sans-serif;
-	line-height: 1.5;
-	color: var(--text-main);
-	min-height: 100svh;
-	display: flex;
-	flex-direction: column;
-	background:
-		radial-gradient(circle at 12% 10%, #fbfcff 0%, #eef2ff 42%, transparent 43%),
-		radial-gradient(circle at 95% 2%, #deecff 0%, transparent 34%),
-		linear-gradient(180deg, #f9faff 0%, #edf1ff 100%);
+  margin: 0;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .hero {
@@ -414,11 +423,6 @@ select {
 	margin-top: 0.35rem;
 	font-weight: 700;
 	color: #2d4bb7;
-}
-
-body.dark-mode {
-	color: #e4e9ff;
-	background: linear-gradient(180deg, #111a43 0%, #151f4f 100%);
 }
 
 body.dark-mode .panel {
