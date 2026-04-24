@@ -16,22 +16,6 @@ Fix the issues in this codebase and improve the quality of the website.
 2. style.css
 3. script.js
 
-## Student Tasks
-1. Fix the schedule list styling bug.
-2. Fix the student count update so it increments correctly after form submission.
-3. Fix the demo day countdown logic and date.
-4. Improve form validation messages.
-5. Improve accessibility:
-	- Add better focus styles
-	- Ensure contrast and readability
-6. Make sure mobile layout looks clean and consistent.
-7. Refactor any messy code you find.
-
-## Bonus Tasks
-1. Add dark mode toggle.
-2. Store form submissions in localStorage.
-3. Add a simple loading animation for track filtering.
-
 ## Suggested Workflow
 1. Clone the repository to your computer.
 	- `git clone https://github.com/Ayokanmi-Adejola/Frontend-Development-Cohort-3.git`
