@@ -8,9 +8,6 @@ The site is intentionally imperfect so students can practice:
 3. Fixing UI and JavaScript issues
 4. Writing clean commits and pull requests
 
-## Assignment Goal
-Fix the issues in this codebase and improve the quality of the website.
-
 ## Project Files
 1. index.html
 2. style.css
