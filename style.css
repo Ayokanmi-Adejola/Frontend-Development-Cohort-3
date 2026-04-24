@@ -15,6 +15,7 @@
 }
 
 body {
+	/* 
 	margin: 0;
 	font-family: "Manrope", "Segoe UI", sans-serif;
 	line-height: 1.5;
@@ -22,10 +23,11 @@ body {
 	min-height: 100svh;
 	display: flex;
 	flex-direction: column;
-	/*background:
+	background:
 		radial-gradient(circle at 12% 10%, #fbfcff 0%, #eef2ff 42%, transparent 43%),
 		radial-gradient(circle at 95% 2%, #deecff 0%, transparent 34%),
-		linear-gradient(180deg, #f9faff 0%, #edf1ff 100%); */
+		linear-gradient(180deg, #f9faff 0%, #edf1ff 100%); 
+	*/
 }
 
 .hero {
