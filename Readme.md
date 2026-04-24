@@ -15,17 +15,25 @@ The site is intentionally imperfect so students can practice:
 
 ## Suggested Workflow
 1. Clone the repository to your computer.
-	- `git clone https://github.com/Ayokanmi-Adejola/Frontend-Development-Cohort-3.git`
-	- `cd Frontend-Development-Cohort-3`
+ ```
+  git clone https://github.com/Ayokanmi-Adejola/Frontend-Development-Cohort-3.git
+```
+	- cd Frontend-Development-Cohort-3
 2. Create a new branch for your fixes.
-	- `git checkout -b your-name-fixes`
+ ```
+  git checkout -b your-name-fixes
+ ```
 3. Make your changes and commit in small logical steps.
-	- `git add -A`
-	- `git commit -m "Describe your change"`
-4. Push your branch to GitHub.
-	- `git push -u origin your-name-fixes`
-5. Open a pull request with a clear summary.
-6. Request a review from a teammate or instructor.
+```
+git add -A
+```
+	git commit -m "Describe your change"
+5. Push your branch to GitHub.
+```
+git push -u origin your-name-fixes
+```
+7. Open a pull request with a clear summary.
+8. Request a review from a teammate or instructor.
 
 ## Instructor Notes
-The current site includes intentional errors in CSS selectors and JavaScript element targeting/date logic. Students should identify and fix them as part of this exercise.
+The current site includes intentional errors in CSS selectors and JavaScript elements. Students should identify and fix them as part of this exercise.
