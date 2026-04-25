@@ -34,16 +34,27 @@ body {
   transition: background-color 0.3s, color 0.3s;
   background-color: var(--bg-color);
   color: var(--text-color);
+	margin: 0;
+	font-family: "Manrope", "Segoe UI", sans-serif;
+	line-height: 1.5;
+	color: var(--text-main);
+	height: 100svh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background:
+		radial-gradient(circle at 12% 10%, #fbfcff 0%, #eef2ff 42%, transparent 43%),
+		radial-gradient(circle at 95% 2%, #deecff 0%, transparent 34%),
+		linear-gradient(180deg, #f9faff 0%, #edf1ff 100%); 
 }
 .hero {
 	padding: 1rem 1.1rem 1.15rem;
-	background:
-		radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.22) 0%, transparent 40%),
-		radial-gradient(circle at 88% 10%, rgba(56, 201, 197, 0.22) 0%, transparent 34%),
-		linear-gradient(130deg, var(--brand-deep) 0%, var(--brand-indigo) 56%, var(--brand-blue) 100%);
-	color: #f8f9ff;
+	background: transparent;
+	color: #111111;
 	border-bottom-left-radius: 28px;
 	border-bottom-right-radius: 28px;
+	flex: 1;
+	overflow-y: auto;
 }
 
 .hero-shell {
@@ -64,16 +75,23 @@ body {
 	align-items: center;
 	gap: 0.65rem;
 	text-decoration: none;
+	cursor: pointer;
+}
+
+.brand-lockup:hover .brand-logo {
+	opacity: 0.9;
+	transform: translateY(-1px);
+	transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .brand-logo {
 	width: clamp(100px, 14vw, 150px);
 	height: auto;
 	display: block;
-	border-radius: 10px;
-	background: #ffffff;
-	padding: 0.2rem;
-	box-shadow: 0 10px 30px rgba(9, 15, 48, 0.2);
+	border-radius: 0;
+	background: transparent;
+	padding: 0;
+	box-shadow: none;
 }
 
 .nav-links {
@@ -85,7 +103,7 @@ body {
 }
 
 .nav-links a {
-	color: #eef2ff;
+	color: #111111;
 	text-decoration: none;
 	font-weight: 800;
 	font-size: 1.05rem;
@@ -97,7 +115,7 @@ body {
 }
 
 .nav-links a:hover {
-	background: rgba(255, 255, 255, 0.16);
+	background: rgba(17, 17, 17, 0.08);
 	transform: translateY(-1px);
 }
 
@@ -163,7 +181,7 @@ body {
 	min-height: 1.2rem;
 	margin-top: 0.8rem;
 	font-weight: 600;
-	color: #d7fff5;
+	color: #111111;
 }
 
 main {
@@ -421,6 +439,9 @@ select {
 	margin-top: 0.35rem;
 	font-weight: 700;
 	color: #2d4bb7;
+body.dark-mode {
+	color: #e4e9ff;
+	background: linear-gradient(180deg, #111a43 0%, #151f4f 100%);
 }
 
 body.dark-mode .panel {
