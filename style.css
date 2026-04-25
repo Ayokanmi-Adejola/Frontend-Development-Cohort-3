@@ -24,7 +24,6 @@
   --surface: #ffffff;
   --border: #d6dcff;
 }
-
 body {
   margin: 0;
   font-family: "Manrope", "Segoe UI", sans-serif;
@@ -36,7 +35,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
-
 .hero {
 	padding: 1rem 1.1rem 1.15rem;
 	background:
