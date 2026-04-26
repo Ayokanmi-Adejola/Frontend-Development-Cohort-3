@@ -2,6 +2,16 @@ const yearElement = document.getElementById("year");
 const countdownButton = document.getElementById("countdown-btn");
 const countdownResult = document.getElementById("countdown-result");
 
+window.addEventListener("load", function () {
+    const heading = document.querySelector("h1");
+
+    if (heading) {
+        heading.style.color = "green";
+    }
+
+    console.log("Page fully loaded and scripts initialized!");
+});
+
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
