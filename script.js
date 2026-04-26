@@ -1,7 +1,13 @@
 const yearElement = document.getElementById("year");
 const countdownButton = document.getElementById("countdown-btn");
 const countdownResult = document.getElementById("countdown-result");
+const toggleBtn = document.getElementById("theme-toggle");
 
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+}
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
