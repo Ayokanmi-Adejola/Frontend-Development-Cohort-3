@@ -85,7 +85,7 @@ body {
 }
 
 .nav-links a {
-	color: #111111;
+	color: var(--brand-indigo);
 	text-decoration: none;
 	font-weight: 800;
 	font-size: 1.05rem;
@@ -97,7 +97,7 @@ body {
 }
 
 .nav-links a:hover {
-	background: rgba(17, 17, 17, 0.08);
+	background: rgba(79, 93, 226, 0.1);
 	transform: translateY(-1px);
 }
 
