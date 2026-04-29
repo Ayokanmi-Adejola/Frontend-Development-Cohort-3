@@ -136,6 +136,48 @@ body {
 	margin: 0 0 0.75rem;
 }
 
+.bulb-demo {
+	margin-top: 1.1rem;
+	text-align: center;
+}
+
+.bulb-controls {
+	display: flex;
+	justify-content: center;
+	gap: 0.6rem;
+	flex-wrap: wrap;
+	margin-bottom: 0.85rem;
+}
+
+.bulb-btn {
+	background: linear-gradient(145deg, var(--brand-indigo) 0%, var(--brand-blue) 100%);
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	padding: 0.56rem 0.88rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bulb-btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 8px 16px rgba(48, 76, 202, 0.25);
+}
+
+.bulb-image {
+	width: 220px;
+	height: 220px;
+	object-fit: contain;
+	background-color: transparent;
+	display: block;
+	margin: 0 auto;
+}
+
+.bulb-image.is-off {
+	mix-blend-mode: multiply;
+}
+
 #countdown-btn {
 	padding: 0.5rem 0.78rem;
 	font-size: 0.92rem;
@@ -561,6 +603,11 @@ footer {
 	.hero-content h1 {
 		font-size: 1.25rem;
 		white-space: normal;
+	}
+
+	.bulb-image {
+		width: 180px;
+		height: 180px;
 	}
 
 	.tracks-grid {

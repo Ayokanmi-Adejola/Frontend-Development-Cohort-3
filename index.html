@@ -39,10 +39,15 @@
         <p id="FRONTEND">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias doloremque, incidunt ut consequuntur recusandae illo impedit autem eaque nemo tempore deleniti officia magni corrupti blanditiis labore. Quos, dolorum! Non cum dolores molestias architecto quod quaerat odio quisquam autem, adipisci veritatis libero? Totam eveniet vero iure eius alias quis quod. Quaerat.</p>
         <label for="dob">Date of Birth:</label>
         <input type="date"><br><br>
+        
+            <section class="bulb-demo" aria-label="Light bulb demo">
+                <div class="bulb-controls">
+                    <button class="bulb-btn" onclick="document.getElementById('myImage').src='bulb-on.jpg'; document.getElementById('myImage').classList.remove('is-off');">Turn on the light</button>
+                    <button class="bulb-btn" onclick="document.getElementById('myImage').src='bulb-off.jpg'; document.getElementById('myImage').classList.add('is-off');">Turn off the light</button>
+                </div>
+                <img id="myImage" src="bulb-off.jpg" alt="Light bulb" class="bulb-image is-off">
+            </section>
         </section>
-        <button onclick="document.getElementById('myImage').src='bulb-on.jpg'">Turn on the light</button>
-        <img id="myImage" src="bulb-off.jpg" style="width:100px">
-        <button onclick="document.getElementById('myImage').src='bulb-off.jpg'">Turn off the light</button>
 
         
     </header>
