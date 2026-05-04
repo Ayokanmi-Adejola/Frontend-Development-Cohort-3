@@ -8,8 +8,7 @@ form.addEventListener("submit", (e) => {
   if (
     name.value === "" ||
     email.value === "" ||
-    password.value === "" ||
-    confirmPassword.value === ""
+    password.value === "" 
   ) { 
     alert("please fill in all required fields.");
   /* if (password.value.length < 8) {
