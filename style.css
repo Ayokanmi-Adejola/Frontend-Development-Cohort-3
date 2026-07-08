@@ -629,5 +629,19 @@ footer {
 #qr-code{
 	padding: 0.5rem;
 	width:12rem;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
+	}
+	#container{
+		border: 1px solid black;
+		border-radius: 1rem;
+		display: flex;
+		justify-content: center;
+		height: 400px;
+		width: 300px;
+		margin-left: 480px;
+	}
+	#card{
+          align-items: center;
+		  background-color: hsl(0, 1%, 33%);
+		  border-radius: 1rem;
 	}
