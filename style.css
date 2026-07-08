@@ -626,4 +626,8 @@ footer {
 		padding: 0.65rem 0.85rem;
 	}
 }
-
+#qr-code{
+	padding: 0.5rem;
+	width:12rem;
+	border-radius: 0.5rem;
+	}
