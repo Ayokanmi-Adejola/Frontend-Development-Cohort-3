@@ -34,6 +34,3 @@ git push -u origin your-name-fixes
 ```
 7. Open a pull request with a clear summary.
 8. Request a review from a teammate or instructor.
-
-## Instructor Notes
-The current site includes intentional errors in CSS selectors and JavaScript elements. Students should identify and fix them as part of this exercise.
