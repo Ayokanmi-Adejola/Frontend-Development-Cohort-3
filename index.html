@@ -39,19 +39,13 @@
             layout, interaction, accessibility, and content issues
           </h1>
         </marquee>
-        <button
-          onclick="document.getElementById('FRONTEND').innerHTML = Date()"
-        >
-          click me to display date and time
-        </button>
-        <p id="FRONTEND">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-          doloremque, incidunt ut consequuntur recusandae illo impedit autem
-          eaque nemo tempore deleniti officia magni corrupti blanditiis labore.
-          Quos, dolorum! Non cum dolores molestias architecto quod quaerat odio
-          quisquam autem, adipisci veritatis libero? Totam eveniet vero iure
-          eius alias quis quod. Quaerat.
-        </p>
+        <div class="hero-actions">
+          <button id="click-btn" class="bulb-btn" type="button">
+            Click Me
+          </button>
+          <p id="frontend">This is a sample HTML document</p>
+        </div>
+
         <label for="dob">Date of Birth:</label>
         <input type="date" /><br /><br />
 
@@ -84,7 +78,7 @@
           /><br /><br />
         
           <h1>log-in page</h1>
-          <form action="">
+          <form id="form" action="">
             <label for="username">Username</label>
             <input type="username" id="username" name="Username" /><br />
 
