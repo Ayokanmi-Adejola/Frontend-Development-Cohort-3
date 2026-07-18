@@ -642,6 +642,6 @@ footer {
 	}
 	#card{
           align-items: center;
-		  background-color: hsl(0, 1%, 33%);
+		  background-color: white;
 		  border-radius: 1rem;
 	}
